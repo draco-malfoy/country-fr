@@ -4,7 +4,7 @@
   "scripts": {
     "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -29,7 +29,9 @@
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
 
   },
   "devDependencies": {
@@ -40,6 +42,7 @@
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
+    "enhanced-resolve": "^5.8.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.1.0",
     "karma-chrome-launcher": "~3.1.0",
